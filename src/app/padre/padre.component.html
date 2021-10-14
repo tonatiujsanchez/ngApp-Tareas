@@ -1,0 +1,21 @@
+<h1>{{titulo}}</h1>
+<div class="contenedor">
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Blog</a>
+        <a href="#">Porfolio</a>
+    </nav>
+</div>
+<app-hijo1></app-hijo1>
+
+<div class="contenedor operacion">
+    <div class="suma">
+        <p> {{ num1 }} <span>+</span> {{ num2 }} </p>
+        <button (click)="sumar()">sumar</button>
+        <p> {{ resultado }} </p>
+    </div>
+</div>
+<div *ngFor="let item of [ 0, 2, 3, 4, 5 ]" class="contenedor crono">
+    <app-cronometro></app-cronometro>
+</div>

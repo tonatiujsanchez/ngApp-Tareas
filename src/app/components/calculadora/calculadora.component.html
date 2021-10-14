@@ -1,0 +1,19 @@
+<div class="contenedor-calculadora">
+    <div class="calculadora">
+        <div class="campo-operacion">
+            <input [(ngModel)]="operacion" (keyup.enter)="resultado()" type="text">
+            <!-- <p class="operacion">{{operacion}}</p> -->
+        </div>
+        <div class="contenedor-numeros">
+            <button (click)="addNumber( num )" class="numero" *ngFor="let num of ['1', '2', '3', '4', '5', '6', '7', '8', '9']">{{num}}</button>
+        </div>
+        <button (click)="addNumber('0')" class="cero">0</button>
+        <div class="operadores">
+            <button (click)="addNumber('+')" class="operador">+</button>
+            <button (click)="addNumber('-')" class="operador">-</button>
+            <button (click)="addNumber('*')" class="operador">*</button>
+            <button (click)="addNumber('/')" class="operador">/</button>
+        </div>
+        <button class="igual" (click)="resultado()">=</button>
+    </div>
+</div>

@@ -1,0 +1,5 @@
+<div class="formulario">
+    <input [(ngModel)]="tarea.nombre" class="campo" type="text" placeholder="Tarea" (keyup.enter)="agregarTarea()">
+    <textarea [(ngModel)]="tarea.desc" class="campo" type="text" placeholder="Descipción" (keyup.enter)="agregarTarea()"></textarea>
+    <button class="campo" (click)="agregarTarea()">Agregar</button>
+</div>

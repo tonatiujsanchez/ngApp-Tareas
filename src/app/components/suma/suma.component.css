@@ -1,0 +1,19 @@
+.suma{
+    width: 100px;
+    border: solid 1px #CECECE;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    margin-top: 100px;
+}
+.suma button{
+    width: 100%;
+    border: none;
+    margin: 10px 0;
+    padding: 5px 0;
+    outline: none;
+    background: #ebebeb;
+}
+.suma button:active{
+    background: #CCC;
+}

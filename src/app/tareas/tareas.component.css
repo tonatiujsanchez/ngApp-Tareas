@@ -1,0 +1,21 @@
+h1{
+    text-align: center;
+    font-family: 'IBM Plex Serif', serif;
+    margin: 20px 0;
+}
+.contenedor{
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+.tareas{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-family: 'IBM Plex Serif', serif;
+    margin-top: 40px;
+}
+@media (max-width:768px){
+    .tareas{
+        grid-template-columns: 1fr;
+    }
+}

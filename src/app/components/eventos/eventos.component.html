@@ -1,0 +1,20 @@
+<button (click)="onClick($event)">Pulsa!</button>
+<select (change)="onChange($event)">
+    <option value="none"  selected="true" disabled>Elige</option>
+    <option value="uno">Uno</option>
+    <option value="dos">Dos</option>
+    <option value="tres">Tres</option>
+</select>
+
+<div class="cuadro" 
+    (mouseenter)="onMouseEnter()"
+    (mouseout)="onMouseOut()"
+    (mousedown)="clickCuadro()"
+    (mouseup)="onMouseEnter()">
+    {{mensaje}}
+</div>
+
+<input type="text" (change)="onChangeInput( $event )"
+                    (input)="onInput($event)"
+                    (focus)="onFocus()"
+                    (blur)="onBlur()">

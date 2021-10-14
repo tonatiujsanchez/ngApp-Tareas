@@ -1,0 +1,18 @@
+.cuadro{
+    background-color: cornflowerblue;
+    width: 200px;
+    height: 200px;
+
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 18px;
+    font-weight: bold;
+}
+
+input{
+    margin-top: 20px;
+}

@@ -1,0 +1,5 @@
+<h1>Lista de Tareas</h1>
+<div class="tareas contenedor">
+    <app-formulario (tareaAgregada)="addTarea($event)" ></app-formulario>
+    <app-lista [tasks]="tareas" ></app-lista>
+</div>
